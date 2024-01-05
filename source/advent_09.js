@@ -3,7 +3,6 @@
 const {createCanvas, loadImage} = require('canvas')
 const seedrandom = require('seedrandom') 
 const fs = require('fs')
-const { randomBytes } = require('crypto')
 
 // generate an image using the seed
 function drawImage(seed) {
@@ -152,6 +151,6 @@ function drawImage(seed) {
 }
 
 // generate all the images
-for (seed = 900; seed < 1000; seed++) {
+for (seed = 1000; seed < 1010; seed++) {
     drawImage(seed)
 }
